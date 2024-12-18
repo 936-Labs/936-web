@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>936 Labs</title>
     <link rel="icon" href="./computer.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
     <style>
         body {
             font-family: 'Lora', serif;
@@ -18,26 +21,36 @@
             background-color: #ffffff;
         }
         div {
+            display: flex;
+            flex-direction: column;
             max-width: 600px;
             padding: 20px;
             border-radius: 8px;
         }
-        ul {
-            text-align: left;
+        h1 {
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        img {
+            border-radius: 5px;
+        }
+        a {
+            width: 100%;
+            padding: 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+            background-color: rgb(245, 245, 245);
         }
     </style>
 </head>
 <body>
     <div>
+        <img width="80px" height="80px" src="./computer.png" alt="">
         <h1>936 Labs</h1>
-        <p>Projects focused on producing high-quality video models, datasets and applied ai projects.</p>
-        <p>Hey! I'm <a href="https://github.com/eric-prog" target="_blank">eric-prog</a>, prev MLE at <a href="https://deepai.org/" target="_blank">DeepAI</a>
-        <p>Problems I'm solving:</p>
-        <ul>
-            <li>movement/physics in video models</li>
-            <li>story telling</li>
-        </ul>
-        <p>Will document my learning journey here as I work through these projects :)</p>
+        <p>A focus on mass synthetic data generation & data annotation</p>
+        <p>Projects: </p>
+        <a target="_blank" href="https://data-viper.com/">Data Viper</a>
     </div>
 </body>
 </html>
